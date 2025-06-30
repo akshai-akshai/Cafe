@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>INTERNATIONAL CAFE</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    .hero-section {
+        background-image: url('cafeback1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: multiply;
+        filter: brightness(1.1) contrast(1.05) saturate(1.2);
+    }
+
+    .hero-content {
+        position: relative;
+
+    }
+
+    .hero-content h1 {
+        font-family: cursive;
+        font-size: 70px;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 1.7);
+    }
+
+    .btn-success {
+
+        border: none;
+        padding: 10px 25px;
+        color: black;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+    .part-section {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #fdf9f9;
+    }
+
+    .part-section img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #ee0a0a;
+        margin-bottom: 15px;
+    }
+
+    .circle-number {
+        width: 40px;
+        height: 40px;
+        background-color: #28a745;
+        color: white;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+    }
+
+    .part-title {
+        font-family: 'Georgia', serif;
+        font-style: italic;
+        font-size: 1rem;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .section-light {
+        background-color: #b7e4a1;
+    }
+
+    .circle-img {
+        width: 100%;
+        height: 100%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    h2 {
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .stats-section {
+        background-image: url('avacado.webp');
+        background-size: cover;
+        height: 40vh;
+        background-position: center;
+        padding: 60px 0;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    .icon-circle {
+        background-color: #28a745;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 auto 10px auto;
+        font-size: 28px;
+        color: white;
+    }
+
+    .stat-item p {
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .stats-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+
+    .stats-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .impact-icon {
+        font-size: 60px;
+        color: #4caf50;
+        margin-bottom: 10px;
+    }
+
+    .impact-title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .section-heading {
+        font-family: 'Georgia', serif;
+        font-style: italic;
+    }
+
+    .testimonial-card {
+        background-color: rgb(202, 184, 184);
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 1.9);
+        text-align: center;
+    }
+
+    .testimonial-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: -80px;
+        border: 5px solid white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    .poke-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .poke-image:hover {
+        transform: scale(1.05);
+    }
+
+    /* .circle-img {
+      width: 250px;
+      height: 250px;
+    } */
+
+
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f7f9fb;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">POKE BOWLS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <i class="fa-solid fa-phone-volume"></i> +91 4585 458 845
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Poke Bowls</h1>
+            <h4>FRESH, HEALTHY AND TASTY</h4>
+            <button class="btn btn-success">VIEW MORE</button>
+        </div>
+    </div>
+
+
+    <div class="container part-section">
+        <p class="part-title">4 Parts</p>
+        <h2 class="main-heading">TO EVERY BOWL</h2>
+
+        <div class="row text-center">
+            <div class="col-md-3 col-6 mb-4">
+                <img src="basmati-rice-recipe.jpg" alt="Rice Base">
+                <div class="circle-number">1</div>
+                <p>Rice or noodle base</p>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <img src="fish.jpeg" alt="Fish Base">
+                <div class="circle-number">2</div>
+                <p>Fresh Fishes</p>
+
+            </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <img src="tea.jpeg" alt="Black tea Base">
+                <div class="circle-number">3</div>
+                <p>Varieties of Tea</p>
+            </div>
+
+            <div class="col-md-3 col-6 mb-4">
+                <img src="fruitsveggies.jpg" alt="Fruits Base">
+                <div class="circle-number">4</div>
+                <p>fruits and Vegitables</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section section-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-block text-center text-md-start">
+                    <h2>HEALTHY AND TASTY</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Suscipit excepturi eum porro repudiandae animi perspiciatis
+                        adipisci qu, blanditiis quidem nesciunt maxime beatae dolor aliquid
+                        perspiciatis quia dolorem vero deleniti at tempore, molestiae illum impedit laborum?</p>
+                    <button class="btn btn-success">MORE ABOUT US</button>
+                </div>
+                <div class="col-md-6 text-center mt-4 mt-md-0">
+                    <img src="berger1.jpeg" alt="Poke Bowl" class="circle-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-white">
+        <div class="container">
+            <div class="row align-items-center flex-md-row-reverse">
+                <div class="col-md-6 text-block text-center text-md-start">
+                    <h2>HEALTHY AND TASTY</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Suscipit excepturi eum porro repudiandae animi perspiciatis
+                        adipisci qu, blanditiis quidem nesciunt maxime beatae dolor aliquid
+                        perspiciatis quia dolorem vero deleniti at tempore, molestiae illum impedit laborum?</p>
+                    <button class="btn btn-success">MORE ABOUT US</button>
+                </div>
+                <div class="col-md-6 text-center mt-4 mt-md-0">
+                    <img src="berger1.jpeg" alt="Poke Bowl" class="circle-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="stats-section">
+        <div class="container stats-content">
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-6 mb-4 stat-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <p>SINCE 2009</p>
+                </div>
+                <div class="col-md-4 col-6 mb-4 stat-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <p>5 RESTAURANTS</p>
+                </div>
+                <div class="col-md-4 col-6 mb-4 stat-item">
+                    <div class="icon-circle">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <p>+40 FOLLOWERS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container text-center my-5">
+        <h5 class="section-heading">Our Impact</h5>
+        <h2 class="fw-bold">ON THE PLANET</h2>
+
+        <div class="row mt-5 g-4">
+            <div class="col-md-4 col-sm-6">
+                <div class="impact-icon"><i class="fa-solid fa-fish"></i></div>
+                <div class="impact-title">FAIR FISH</div>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="impact-icon"><i class="fa-solid fa-tractor"></i></div>
+                <div class="impact-title">LOCAL AGRICULTURE</div>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="impact-icon"><i class="fa-solid fa-tree"></i></div>
+                <div class="impact-title">100% ORGANIC</div>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="impact-icon"><i class="fa-solid fa-building-wheat"></i></div>
+                <div class="impact-title">NO PESTICIDE</div>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="impact-icon"><i class="fa-solid fa-trash"></i></div>
+                <div class="impact-title">NO WASTE</div>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="impact-icon"><i class="fa-solid fa-leaf"></i></div>
+                <div class="impact-title">GREEN LOGISTICS</div>
+                <p>Sample text. Click to select the Text Element.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center py-5">
+        <p class="section-heading">They Love</p>
+        <h2 class="fw-bold">OUR POKE BOWLS</h2>
+
+        <div class="row mt-5 justify-content-center g-4">
+            <div class="col-md-5">
+                <div class="testimonial-card position-relative pt-5">
+                    <img src="yuvi.jpeg" class="testimonial-img position-absolute top-0 start-50 translate-middle-x"
+                        alt="Nina Scavo" />
+                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, tempora.</p>
+                    <div class="testimonial-name">YUVARAJ SIGH</div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="testimonial-card position-relative pt-5">
+                    <img src="msd.jpeg" class="testimonial-img position-absolute top-0 start-50 translate-middle-x"
+                        alt="Tina Marantino" />
+                    <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptate!.</p>
+                    <div class="testimonial-name">M.S DHONI</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+                <img src="fd1.jpeg" class="poke-image" alt="Poke Bowl 1">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="fd2.jpeg" class="poke-image" alt="Poke Bowl 2">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="fd3.jpeg" class="poke-image" alt="Poke Bowl 3">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="fd4.jpeg" class="poke-image" alt="Poke Bowl 4">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="fd5.jpeg" class="poke-image" alt="Poke Bowl 5">
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <img src="fd6.jpeg" class="poke-image" alt="Poke Bowl 6">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container py-5">
+        <h2 class="fw-bold text-center mb-5">CONTACTS</h2>
+        <div class="row align-items-center justify-content-center">
+            <!-- Image -->
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="fruitsveggies.jpg" alt="Poke Bowl" class="circle-img">
+            </div>
+            <!-- Newsletter Form -->
+            <div class="col-md-6">
+                <h5 class="fw-bold">SIGN UP FOR THE NEWSLETTER</h5>
+                <p>Want to be the first to read our news? Subscribe to the newsletter to keep abreast of all events.</p>
+                <form class="d-flex newsletter-input">
+                    <input type="email" class="form-control me-2" placeholder="Enter a valid email address">
+                    <button type="submit" class="btn btn-success">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
